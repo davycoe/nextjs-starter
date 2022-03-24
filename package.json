@@ -1,40 +1,31 @@
 {
   "name": "nextjs-starter",
-  "version": "1.0.0",
-  "description": "Next.js starter: reset-css, styled-components, eslint and prettier",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier \"src/**/*.{js,html}\" --write",
-    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/davycoe/nextjs-starter.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/davycoe/nextjs-starter/issues"
-  },
-  "homepage": "https://github.com/davycoe/nextjs-starter#readme",
   "dependencies": {
-    "next": "^10.2.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "reset-css": "^5.0.1",
-    "styled-components": "^5.3.0"
+    "next": "^12.1.0",
+    "next-plugin-preact": "^3.0.6",
+    "preact": "^10.6.6",
+    "preact-render-to-string": "^5.1.20",
+    "react": "npm:@preact/compat@^17.0.3",
+    "react-dom": "npm:@preact/compat@^17.0.3",
+    "react-query": "^3.34.16",
+    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.2.0"
   },
   "devDependencies": {
-    "eslint": "^7.27.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.23.3",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.23.2",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.3.0"
+    "@types/node": "17.0.23",
+    "@types/react": "17.0.42",
+    "autoprefixer": "^10.4.4",
+    "eslint": "8.11.0",
+    "eslint-config-next": "12.1.0",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23",
+    "typescript": "4.6.2"
   }
 }
