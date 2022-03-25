@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint --fix && git add -A .",
     "prepare": "husky install",
     "prettify": "prettier --write",
     "tsc": "tsc"
@@ -35,7 +35,7 @@
     "typescript": "4.6.2"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": [
+    "src/**/*.{ts,tsx}": [
       "npm run lint",
       "npm run prettify"
     ]
