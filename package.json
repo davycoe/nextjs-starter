@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
+    "prettify": "prettier --write",
     "tsc": "tsc"
   },
   "dependencies": {
@@ -36,7 +37,7 @@
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
       "npm run lint",
-      "npm run prettier --write"
+      "npm run prettify"
     ]
   }
 }
