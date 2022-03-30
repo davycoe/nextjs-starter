@@ -1,8 +1,23 @@
+import Button from "@components/Button";
+
 const Home = () => {
   return (
-    <h1 className="flex justify-center pt-12 text-7xl font-bold underline">
-      Hello world!
-    </h1>
+    <>
+      <Button variant="primary" size="xl" disabled={false}>
+        Primary
+      </Button>
+
+      <Button variant="info" size="lg" disabled={false}>
+        Primary
+      </Button>
+
+      <Button variant="primary" size="md" disabled={false}>
+        Primary
+      </Button>
+      <Button variant="primary" size="sm" disabled={false}>
+        Primary
+      </Button>
+    </>
   );
 };
 
