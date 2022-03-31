@@ -18,11 +18,11 @@ const enum Variant {
 
 // interface to declare all our prop types
 interface Props {
-  children: string;
-  onClick?: () => void;
-  variant: string; // default, primary, info, success, warning, danger, dark
-  size: string; // sm, md, lg, xl
-  disabled?: boolean;
+  readonly children: string;
+  readonly onClick?: () => void;
+  readonly variant: string; // default, primary, info, success, warning, danger, dark
+  readonly size: string; // sm, md, lg, xl
+  readonly disabled?: boolean;
 }
 
 // button component, consuming props
@@ -74,7 +74,6 @@ const Button = ({
       break;
   }
 
-  console.log(disabled);
   return (
     <button
       className={`m-2 rounded py-2 font-bold ${variant} ${size} ${
