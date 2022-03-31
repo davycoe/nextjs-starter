@@ -21,7 +21,8 @@
     "preact": "^10.7.0",
     "preact-render-to-string": "^5.1.20",
     "react": "npm:@preact/compat@^17.0.3",
-    "react-dom": "npm:@preact/compat@^17.0.3"
+    "react-dom": "npm:@preact/compat@^17.0.3",
+    "react-query": "^3.34.19"
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
